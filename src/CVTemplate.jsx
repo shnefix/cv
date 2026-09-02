@@ -47,11 +47,11 @@ const certifications = [
   },
   {
     name: "Datacamp Python Data Fundamentals",
-    date: "Now",
+    date: "2025",
   },
   {
     name: "Datacamp Associate Data Scientist in Python 77%",
-    date: "2024",
+    date: "Now",
   },
 ];
 
