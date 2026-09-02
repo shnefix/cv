@@ -24,14 +24,20 @@ const profile = {
 
 const skills = [
   "Python",
-  "Pytorch",
-  "Numpy",
+  "PyTorch",
+  "NumPy",
   "Pandas",
   "Matplotlib",
+  "Scikit-learn",
+  "Hugging Face",
+  "Transformers",
   "Git",
+  "GitHub",
+  "Jupyter",
+  "Google Colab",
   "HTML",
   "CSS",
-  "Javascript",
+  "JavaScript"
 ];
 
 const certifications = [
@@ -56,7 +62,7 @@ const internships = [
     org: "Atomic IT",
     points: [
       {
-        text: "Developed a responsive personal CV website using React",
+        text: "Developed a personal CV website using React",
         metric: null,
       },
     ],
@@ -67,7 +73,7 @@ const internships = [
     org: "Atomic IT",
     points: [
       {
-        text: "Phone Card Number Extractrator",
+        text: "Phone Card Number Extractor",
         metric: null,
       },
       {
@@ -80,7 +86,7 @@ const internships = [
 
 const projects = [
   {
-    name: "Phone Card Number Extractrator",
+    name: "Phone Card Number Extractor",
     desc: "Developed a web-based OCR solution that automatically extracts phone card numbers from uploaded images using the Cloud Vision API.",
     stack: ["Flask", "HTML", "CSS", "Javascript"],
   },
