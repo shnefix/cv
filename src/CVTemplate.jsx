@@ -42,15 +42,15 @@ const skills = [
 
 const certifications = [
   {
-    name: "AWS Certified Cloud Practitioner",
-    date: "2026",
+    name: "Datacamp Machine Learning Scientist in Python 85%",
+    date: "Now",
   },
   {
-    name: "Meta Front-End Developer (Coursera)",
-    date: "2025",
+    name: "Datacamp Python Data Fundamentals",
+    date: "Now",
   },
   {
-    name: "CS50: Introduction to Computer Science",
+    name: "Datacamp Associate Data Scientist in Python 77%",
     date: "2024",
   },
 ];
