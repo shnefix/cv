@@ -1,8 +1,8 @@
+
 import {
   FaGithub,
   FaLinkedin,
   FaEnvelope,
-  FaGlobe,
   FaPrint,
   FaPhone,
 } from "react-icons/fa";
@@ -31,7 +31,7 @@ const skills = [
   "Git",
   "HTML",
   "CSS",
-  "Javascript"
+  "Javascript",
 ];
 
 const certifications = [
@@ -75,7 +75,7 @@ const internships = [
         metric: null,
       },
     ],
-  }
+  },
 ];
 
 const projects = [
@@ -103,6 +103,7 @@ export default function CVTemplate() {
   return (
     <div className="cv-root">
 
+      {/* Save as PDF */}
       <button
         className="print-btn"
         onClick={() => window.print()}
@@ -111,6 +112,7 @@ export default function CVTemplate() {
         Save as PDF
       </button>
 
+      {/* ================= SIDEBAR ================= */}
       <aside className="sidebar">
 
         <h1 className="name">{profile.name}</h1>
@@ -121,12 +123,14 @@ export default function CVTemplate() {
 
         <div className="accent-rule" />
 
-        <p className="summary">{profile.summary}</p>
+        <p className="summary">
+          {profile.summary}
+        </p>
 
+        {/* Contact */}
         <div className="side-section">
           <div className="side-heading">Contact</div>
 
-          {/* Phone */}
           <a
             className="contact-row"
             href={`tel:${profile.phone}`}
@@ -135,7 +139,6 @@ export default function CVTemplate() {
             {profile.phone}
           </a>
 
-          {/* Email */}
           <a
             className="contact-row"
             href={`mailto:${profile.email}`}
@@ -144,7 +147,6 @@ export default function CVTemplate() {
             {profile.email}
           </a>
 
-          {/* GitHub */}
           <a
             className="contact-row"
             href={`https://${profile.github}`}
@@ -155,7 +157,6 @@ export default function CVTemplate() {
             {profile.github}
           </a>
 
-          {/* LinkedIn */}
           <a
             className="contact-row"
             href={`https://${profile.linkedin}`}
@@ -166,8 +167,6 @@ export default function CVTemplate() {
             {profile.linkedin}
           </a>
 
-
-          {/* LeetCode */}
           <a
             className="contact-row"
             href={`https://${profile.leetcode}`}
@@ -179,6 +178,7 @@ export default function CVTemplate() {
           </a>
         </div>
 
+        {/* Skills */}
         <div className="side-section">
           <div className="side-heading">Skills</div>
 
@@ -194,31 +194,12 @@ export default function CVTemplate() {
           </div>
         </div>
 
-        <div className="side-section">
-          <div className="side-heading">
-            Certifications
-          </div>
-
-          {certifications.map((certification) => (
-            <div
-              className="cert-row"
-              key={certification.name}
-            >
-              <span className="cert-name">
-                {certification.name}
-              </span>
-
-              <span className="cert-date">
-                {certification.date}
-              </span>
-            </div>
-          ))}
-        </div>
-
       </aside>
 
+      {/* ================= MAIN ================= */}
       <main className="main">
 
+        {/* Internships */}
         <section className="main-section">
           <div className="main-heading">
             Internships
@@ -276,10 +257,11 @@ export default function CVTemplate() {
           </div>
         </section>
 
+        {/* Selected Projects */}
         <section className="main-section">
 
           <div className="main-heading">
-            Selected projects
+            Selected Projects
           </div>
 
           {projects.map((project) => (
@@ -309,6 +291,33 @@ export default function CVTemplate() {
 
         </section>
 
+        {/* ================= CERTIFICATIONS ================= */}
+        <section className="main-section certifications-section">
+
+          <div className="main-heading">
+            Certifications
+          </div>
+
+          {certifications.map((certification) => (
+            <div
+              className="cert-row"
+              key={certification.name}
+            >
+
+              <span className="cert-name">
+                {certification.name}
+              </span>
+
+              <span className="cert-date">
+                {certification.date}
+              </span>
+
+            </div>
+          ))}
+
+        </section>
+
+        {/* ================= EDUCATION ================= */}
         <section className="main-section">
 
           <div className="main-heading">
@@ -347,3 +356,5 @@ export default function CVTemplate() {
     </div>
   );
 }
+
+
