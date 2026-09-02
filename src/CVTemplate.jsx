@@ -85,9 +85,9 @@ const projects = [
     stack: ["Flask", "HTML", "CSS", "Javascript"],
   },
   {
-    name: "shelfspace.app",
-    desc: "A shared reading tracker for book clubs, built solo over a semester. ~200 users.",
-    stack: ["React", "Postgres", "Fly.io"],
+    name: "CIFAR-10",
+    desc: "Developed and trained a PyTorch CNN for multi-class image classification, with structured data pipelines, hyperparameter tuning, model evaluation, and experiment tracking.",
+    stack: ["Pytorch"],
   },
 ];
 
