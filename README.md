@@ -1,5 +1,5 @@
 # Personal CV
-
+![CV Website Preview](cv-preview.png)
 A personal CV website built with **React** to present my education, skills, experience, projects, certifications, and professional profiles in a clean and responsive format.
 
 ## Features
